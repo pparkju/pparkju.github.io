@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+  </head>
+  <body>
+    <h1 id="hi">What is your To-Do LIST?</h1>
+    <!--clock-->
+    <h2 id="clock" class="center">00:00:00</h2>
+    <!--login & greeting-->
+    <form id="login-form" class="hidden center">
+      <input
+        type="text"
+        maxlength="15"
+        required
+        placeholder="What is your name?"
+      />
+      <button>Login</button>
+    </form>
+    <h1 id="greeting" class="hidden center"></h1>
+    <!--todo list-->
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <!--Quotes-->
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <!--currrnet weather for location-->
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="./js/projectGreeting.js" defer></script>
+    <script src="./js/projectClock.js"></script>
+    <script src="./js/projectQuotes.js"></script>
+    <script src="./js/projectbackground.js"></script>
+    <script src="./js/projectTodo.js"></script>
+    <script src="./js/projectWeather.js"></script>
+  </body>
+</html>
